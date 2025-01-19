@@ -1,12 +1,12 @@
 @echo off
 
 if "%1"=="build" (
-    cmake -S . -B build -G "MinGW Makefiles"
-    make -C .\build
+    cmake -S . -B build -G "Visual Studio 17 2022"
+    cmake --build .\build
 ) else if "%1"=="run" (
-    .\build\%2
+    .\build\Debug\%2
 ) else if "%1"=="clean" (
-    make -C .\build clean
+    cmake --build .\build --target clean
 ) else if "%1"=="cleanall" (
     rmdir /s /q build
 )
