@@ -66,6 +66,8 @@ elif [ "$1" = "create" ]; then
     else
         echo "Please provide the name of the project"
     fi
+elif [ "$1" = "linklsp" ]; then
+    ln -s ./build/compile_commands.json compile_commands.json
 fi
 
 
