@@ -15,6 +15,10 @@
   ```bash
   sudo chmod +x /usr/local/bin/cctl
   ```
+### Windows :
+- [Download](https://raw.githubusercontent.com/dhruv-dhaduk/cctl/main/cctl.bat) the batch file.
+- Save it to any folder of your choice. (e.g., `C:\scripts`).
+- Set the path of that folder in environment variable.
 
 ## Usage
 - The script is very simple now, so you can just look at its source code to know what it can do.
